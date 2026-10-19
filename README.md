@@ -79,6 +79,12 @@
 
 ---
 
+## 相关项目
+
+- **[CONQUER! 征服](https://github.com/Tinker-TK/conquer)** —— 个人开发的卡牌构筑战棋 Roguelike（Godot 4.6）：44 兵种 / 61 卡牌 / 66 遗物，16 层路线、战棋部署、四层地形与自研内容生产工具链。可下载 Windows 试玩包。
+
+---
+
 ## 关于
 
 求职方向：**关卡设计**　·　GitHub：[@Tinker-TK](https://github.com/Tinker-TK)
