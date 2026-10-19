@@ -10,3 +10,7 @@ desktop.ini
 .vscode/
 .idea/
 *.tmp
+
+# 本地上传工具（只在你电脑上，不进仓库）
+更新作品.cmd
+_update.ps1
