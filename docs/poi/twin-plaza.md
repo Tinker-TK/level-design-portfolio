@@ -1,7 +1,7 @@
 # 双塔广场：一个 Apex 风格 POI 的设计过程
 
 > 从灰盒到主题化的完整实践：先定体验，再定拓扑，最后才做美术。
-> 方法论依据：[Apex 风格关卡设计方法论 v0.1](apex-level-design-methodology.md)。
+> 方法论依据：[Apex 风格关卡设计方法论 v0.1](../apex-level-design-methodology.md)。
 
 ![双塔广场全景](images/overview.png)
 
@@ -164,4 +164,4 @@
 | 总览渲染 | 本文 `images/overview.png` |
 | 顶视图 | 本文 `images/top-view.png` |
 
-方法论的完整框架见 [Apex 风格关卡设计方法论](apex-level-design-methodology.md)。
+方法论的完整框架见 [Apex 风格关卡设计方法论](../apex-level-design-methodology.md)。
