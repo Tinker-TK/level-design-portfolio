@@ -1,6 +1,6 @@
 # 关卡设计作品集 · Level Design Portfolio
 
-> 三份针对商业游戏的关卡设计分析：一份方法论、两份案例拆解。
+> 三份商业游戏关卡分析（一份方法论、两份案例拆解），加一个自己搭出来、能跑起来的 Apex 风格 POI。
 > 目标不是复述「这关很好玩」，而是把好玩的机制拆成**能写进需求文档、能拿去做验收**的东西。
 
 ---
@@ -12,6 +12,21 @@
 | 1 | **Apex 风格关卡设计方法论** | 方法论 / 框架 | 约 1.7 万字 · 16 节 + 附录 A | [Markdown](docs/apex-level-design-methodology.md) |
 | 2 | **《塞尔达传说：旷野之息》关卡设计分析报告** | 案例拆解 / 开放世界 | 约 1.8 万字 · 12 节 + 2 附录 | [Markdown](docs/zelda-botw-level-design-analysis.md) |
 | 3 | **原版愤怒小鸟关卡设计分析** | 案例拆解 / 休闲物理 | 10 页 · 含截图与流程图 | [PDF](docs/angry-birds-level-design-analysis.pdf) · [Word 源文件](docs/angry-birds-level-design-analysis.docx) |
+| 4 | **双塔广场：一个 Apex 风格 POI** | 设计实践 / 可运行关卡 | 约 100 × 100 m · Godot 场景 | [案例说明](docs/poi/twin-plaza.md) |
+
+---
+
+## 从分析到实践：双塔广场
+
+![双塔广场](docs/poi/images/overview.png)
+
+方法论不是写完就完了。我用它在 Godot 4.6 里搭了一个可运行的 POI：双塔当幕布，把广场切成五条走廊；中央双壳做 commit 点；最后主题化成奥林匹斯空中花园。
+
+- 体验定义 → 拓扑 → 高差 → 掩体 → 主题化，每一步都能追回到方法论的具体条款（切分、咽喉点、量化标尺、信息层）
+- 中途推翻过一次判断：把「双塔当制高点」改成「双塔当视线墙」，整套拓扑重做了一遍
+- 走廊时间、战斗剖面、验证脚本结果都写进了文档，没做过的验证也如实标注
+
+[完整设计过程](docs/poi/twin-plaza.md)
 
 ---
 
@@ -41,6 +56,7 @@
 | **10 分钟** | [Apex 方法论 · 第 0 节](docs/apex-level-design-methodology.md#0-一句话结论) + [第 14 节一页速查卡](docs/apex-level-design-methodology.md#14-一页速查卡) | 一句话结论：关卡是「制造可预期冲突的机器」，以及拉力/推力/切分/计时四个部件 |
 | **30 分钟** | 加上 [旷野之息 · 阅读摘要](docs/zelda-botw-level-design-analysis.md#阅读摘要) 与 [第 3 节初始台地](docs/zelda-botw-level-design-analysis.md#3-初始台地如何把玩家教到能够自由探索) | 教学如何从「给提示」过渡到「玩家主动复用知识」 |
 | **深读** | [愤怒小鸟 PDF](docs/angry-birds-level-design-analysis.pdf) + 方法论第 3–10 节 | 一个品类内的代际演化，以及可执行的迭代手册 |
+| **看落地** | [双塔广场 POI](docs/poi/twin-plaza.md) | 同一套方法怎么变成一个能跑的关卡：体验 → 拓扑 → 主题化的完整推演 |
 
 ---
 
@@ -62,6 +78,7 @@
 | 旷野之息 | 完成版。覆盖复苏神庙、初始台地、卓拉、格鲁德、克洛格森林、利特、死亡之山等区域，附证据口径说明 |
 | Apex 方法论 | v0.1。框架与检查表已完整，第 16 节保留了实测补充位，后续按项目反馈迭代 |
 | 愤怒小鸟 | 按可得内容完成。原始手稿在第 5.2 节处中断，未收录部分未做虚构补写 |
+| 双塔广场 POI | 可运行场景 + 设计说明。花园、主楼、HUD 检查 0 失败；多人实战、缩圈与热力图验证尚未进行 |
 
 ---
 
@@ -74,7 +91,10 @@
     ├── apex-level-design-methodology.md          # 方法论
     ├── zelda-botw-level-design-analysis.md       # 开放世界案例
     ├── angry-birds-level-design-analysis.pdf     # 休闲物理案例（阅读版）
-    └── angry-birds-level-design-analysis.docx    # 同上，Word 源文件
+    ├── angry-birds-level-design-analysis.docx    # 同上，Word 源文件
+    └── poi/
+        ├── twin-plaza.md                        # POI 设计实践
+        └── images/                              # 总览、顶视图、拓扑图
 ```
 
 ---
